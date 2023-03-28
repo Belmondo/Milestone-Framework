@@ -12,6 +12,12 @@ public class RunMapeLoop {
         NFRImplemented.add(nfr);
     }
 
+    public void runMapeLoop(){
+        
+    }
+
+    private void prepareMapeLoop(){}
+
     
 
 
