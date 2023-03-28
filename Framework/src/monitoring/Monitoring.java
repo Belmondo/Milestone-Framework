@@ -1,6 +1,9 @@
 package monitoring;
 
-public class Monitoring {
+
+import models.ISelfAdaptiveStep;
+
+public class Monitoring implements ISelfAdaptiveStep {
 
 
     public static void updateNFRMeasurements(String NFRName, int updateValue){
@@ -16,7 +19,17 @@ public class Monitoring {
 
     }
 
-    private void sendToAnalyze(){}
+    @Override
+    public void registerNextStep() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'registerNextStep'");
+    }
+
+    @Override
+    public void notifyNextStep() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'notifyNextStep'");
+    }
 
 
 
