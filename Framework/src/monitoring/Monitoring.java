@@ -1,9 +1,13 @@
 package monitoring;
 
 
+import java.util.List;
+
 import models.ISelfAdaptiveStep;
 
 public class Monitoring implements ISelfAdaptiveStep {
+
+    private static List<ISelfAdaptiveStep> lisftOfAnalyzes;
 
 
     public static void updateNFRMeasurements(String NFRName, int updateValue){
@@ -20,17 +24,15 @@ public class Monitoring implements ISelfAdaptiveStep {
     }
 
     @Override
-    public void registerNextStep() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'registerNextStep'");
-    }
-
-    @Override
     public void notifyNextStep() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'notifyNextStep'");
     }
 
+    @Override
+    public void registerNextStep(ISelfAdaptiveStep selfAdaptiveStep) {
+        lisftOfAnalyzes.add(selfAdaptiveStep);
+    }
 
 
 }
