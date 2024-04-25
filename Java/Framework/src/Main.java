@@ -1,5 +1,6 @@
 import Implementation.SecurityModule;
 import Implementation.SecurityNFR;
+import metrics.space.MemoryUsage;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
@@ -11,10 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        SecurityNFR securityNFR = new SecurityNFR();
+        /*SecurityNFR securityNFR = new SecurityNFR();
         securityNFR.increaseIndex(2);
-        securityNFR.increaseIndex(3);
-
+        securityNFR.increaseIndex(3);*/
+        
 
     }
 

@@ -7,7 +7,6 @@ public class PerformanceNFR extends NFRDefinition {
     String name = "Performance";
     int index = 0;
 
-    @Override
     public void increaseIndex(int index){
         switch (index){
             case 1:

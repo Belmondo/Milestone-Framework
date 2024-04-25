@@ -9,7 +9,6 @@ public class SecurityNFR extends NFRDefinition {
 
     SecurityModule securityModule = new SecurityModule();
 
-    @Override
     public void increaseIndex(int index){
 
         switch (index){

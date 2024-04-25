@@ -1,6 +1,6 @@
 package models;
 
-public abstract class NFRDefinition extends NFRAbsModel {
+public class NFRDefinition extends NFRAbsModel {
 
     //criar duas classes, uma pra segurança e outra pra desempenho
     //mudar os thresholdsbalance de cada um
@@ -29,8 +29,6 @@ public abstract class NFRDefinition extends NFRAbsModel {
     public void setIndex(int index){
         this.index = index;
     }
-
-    public abstract void increaseIndex(int index);
 
 
 }
