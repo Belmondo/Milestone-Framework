@@ -9,9 +9,9 @@ As the project evolved, the idea of ​​inserting machine learning algorithms 
 With this, the project was changed to Python, and the milestone went from an imported library to code that must be executed on the system server.
 
 
-//## Installation
+<!-- ## Installation -->
 
-//Currently, the installation process consists of adding the project classes to the desired self-adaptive system, paying attention to the hierarchy system presented by the project.
+<!-- //Currently, the installation process consists of adding the project classes to the desired self-adaptive system, paying attention to the hierarchy system presented by the project. -->
 ## Improvements
 
 The improvements listed for the framework consist of:
