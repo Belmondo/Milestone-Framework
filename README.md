@@ -16,12 +16,10 @@ With this, the project was changed to Python, and the milestone went from an imp
 
 The improvements listed for the framework consist of:
 
-I - Convert each subproject into a library to facilitate import and use
-Done
+I - Convert each subproject into a library to facilitate import and use - DONE
 
-II - Improvement of the planning stage, with the addition of intelligent algorithms native to the framework
-Done
+II - Improvement of the planning stage, with the addition of intelligent algorithms native to the framework - DONE
+
 
 III - Transform the framework into a more complete platform, combined with the LoCCAM Middleware platform
- - [LoCCAM Middleware ](https://dl.acm.org/doi/abs/10.1145/2480362.2480465)
-IN PROCESS
+ - [LoCCAM Middleware ](https://dl.acm.org/doi/abs/10.1145/2480362.2480465) - IN PROCESS
