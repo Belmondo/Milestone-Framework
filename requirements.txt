@@ -3,6 +3,7 @@ fastapi
 uvicorn
 pydantic
 requests
-joblib
-scikit-learn
 numpy
+scikit-learn
+joblib
+tensorflow
