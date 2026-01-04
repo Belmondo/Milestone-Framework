@@ -2,7 +2,6 @@
 
 **MILESTONE: A Framework for Continuous Performance Monitoring in Self-Adaptive Systems.**
 
-> **Link externo para teste da API (preencher):**  
 > 🔗 **[Test API](COLE_AQUI_O_LINK_DO_DEPLOY/BASE_URL)**
 
 
