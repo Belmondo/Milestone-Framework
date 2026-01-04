@@ -2,7 +2,7 @@
 
 **MILESTONE: A Framework for Continuous Performance Monitoring in Self-Adaptive Systems.**
 
-> 🔗 **[Test API](COLE_AQUI_O_LINK_DO_DEPLOY/BASE_URL)**
+> 🔗 **[Test API] https://milestone-framework.streamlit.app/**
 
 
 ### About the API
