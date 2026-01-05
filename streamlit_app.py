@@ -600,7 +600,7 @@ with st.sidebar:
 if page == "home":
     # Landing HTML preservada
     html = build_landing_html(lang=lang, t=t, lab_logo_uri=lab_logo_uri, uni_logo_uri=uni_logo_uri)
-    components.html(html, height=1120, scrolling=True)
+    components.html(html, height=1120, scrolling=False)
 
 elif page == "swagger":
     render_swagger_ui(openapi_spec=openapi_spec, lang=lang, t=t)
