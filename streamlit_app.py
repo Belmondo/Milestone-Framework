@@ -592,8 +592,8 @@ with st.sidebar:
         st.rerun()
 
     st.divider()
-    st.markdown("**Assets (opcional)**")
-    st.code("static/theme.css\nstatic/swagger.css\nstatic/lab-logo.png\nstatic/uni-logo.png")
+    #st.markdown("**Assets (opcional)**")
+    #st.code("static/theme.css\nstatic/swagger.css\nstatic/lab-logo.png\nstatic/uni-logo.png")
 
 
 # Render das páginas
