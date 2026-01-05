@@ -1,0 +1,142 @@
+@import url("https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css");
+
+:root{
+  --blue: #115482;
+  --blue2: #3C7CAA;
+  --gold: #E39749;
+
+  --bg: #0B1020;
+  --card: rgba(15, 23, 51, .82);
+  --text: #E8ECFF;
+  --muted: #CFD7FF;
+  --border: rgba(60, 124, 170, .35);
+}
+
+.swagger-ui .responses-table .response-col_status,
+.swagger-ui .responses-table .response-col_status * {
+    color: #ffffff !important;
+    font-family: sans-serif !important;
+    font-size: 14px !important;
+}
+
+.swagger-ui .opblock-description-wrapper p, .swagger-ui .opblock-external-docs-wrapper p, .swagger-ui .opblock-title_normal p {
+    color: #ffffff !important;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+.swagger-ui a.nostyle, .swagger-ui a.nostyle:visited {
+    color: #ffffff !important;
+    cursor: pointer;
+    text-decoration: inherit;
+}
+
+.swagger-ui .btn {
+    background: #62c389 !important;
+    border: 1px solid #000000 !important;
+    border-radius: 4px;
+    box-shadow: 7px 1px 0px 0px rgba(0, 0, 0, .1);
+    color: #000000 !important;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 5px 23px;
+    transition: all .3s;
+}
+
+
+.swagger-ui .btn.cancel {
+    background-color: #ff6060 !important;
+    border-color: #ff6060 !important;
+    color: #ffffff !important;
+    font-family: sans-serif;
+}
+
+.swagger-ui .response-col_links {
+    color: #979fb5 !important;
+    font-family: sans-serif;
+    font-size: 14px;
+    max-width: 40em;
+    padding-left: 2em;
+}
+
+.swagger-ui table thead tr td, .swagger-ui table thead tr th {
+    border-bottom: 1px solid rgba(59, 65, 81, .2);
+    color: #ffffff !important;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 0;
+    text-align: left;
+}
+
+/* Fundo geral igual à landing */
+body{
+  background:
+    radial-gradient(900px 600px at 20% 10%, rgba(17,84,130,.22), transparent),
+    radial-gradient(900px 600px at 80% 30%, rgba(227,151,73,.14), transparent),
+    var(--bg) !important;
+}
+
+
+/* Centraliza e dá “cara de portal” */
+.swagger-ui .wrapper{ max-width: 1120px; }
+
+/* Topbar mais acadêmica e alinhada com a marca */
+.swagger-ui .topbar{
+  background: rgba(11,16,32,.70) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.swagger-ui .topbar-wrapper{ padding: 10px 0; }
+
+/* Opblocks como cards */
+.swagger-ui .opblock{
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 18px !important;
+}
+.swagger-ui .opblock .opblock-summary{ border-bottom: 1px solid var(--border) !important; }
+
+/* Tipografia e textos */
+.swagger-ui, .swagger-ui .info, .swagger-ui .info p, .swagger-ui .opblock-summary-description{
+  color: var(--muted) !important;
+}
+
+.swagger-ui .info h1, .swagger-ui .info h2, .swagger-ui .info h3{
+  color: var(--text) !important;
+}
+
+/* Barra de schemes */
+.swagger-ui .scheme-container{
+  background: rgba(17,84,130,.12) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 18px !important;
+}
+
+/* Inputs */
+.swagger-ui input, .swagger-ui select, .swagger-ui textarea{
+  background: rgba(11,16,32,.75) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+}
+
+/* Botões e realces (dourado como “accent”) */
+.swagger-ui .btn, .swagger-ui .btn:hover{
+  border-radius: 12px !important;
+}
+.swagger-ui .btn.execute{
+  background: rgba(227,151,73,.16) !important;
+  border-color: rgba(227,151,73,.45) !important;
+}
+.swagger-ui .btn.execute:hover{
+  background: rgba(227,151,73,.22) !important;
+}
+
+/* Cores por método (coerentes com azul/dourado) */
+.swagger-ui .opblock.opblock-get .opblock-summary-method{ background: var(--blue2) !important; }
+.swagger-ui .opblock.opblock-post .opblock-summary-method{ background: var(--gold) !important; color: #1b140c !important; }
+.swagger-ui .opblock.opblock-put .opblock-summary-method{ background: var(--blue2) !important; }
+.swagger-ui .opblock.opblock-delete .opblock-summary-method{ background: var(--gold) !important; color: #1b140c !important; }
