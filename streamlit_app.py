@@ -570,28 +570,28 @@ uni_logo_uri = _img_to_data_uri(STATIC_DIR / "uni-logo.png") or lab_logo_uri or 
 openapi_spec = build_openapi(lang=lang, lab_logo_data_uri=lab_logo_uri if lab_logo_uri and lab_logo_uri != "data:image/png;base64," else None)
 
 # Sidebar (navegação)
-with st.sidebar:
-    st.markdown(f"### {t['ui_title']}")
-    st.caption(t["ui_hint"])
+#with st.sidebar:
+#    st.markdown(f"### {t['ui_title']}")
+#    st.caption(t["ui_hint"])
 
-    lang_sel = st.selectbox("Language", ["pt", "en"], index=0 if lang == "pt" else 1)
-    page_map = {
-        "home": t["page_home"],
-        "swagger": t["page_swagger"],
-        "redoc": t["page_redoc"],
-        "openapi": t["page_openapi"],
-        "endpoints": t["page_endpoints"],
-    }
-    page_sel_label = st.radio("Navegação", list(page_map.values()), index=list(page_map.keys()).index(page) if page in page_map else 0)
+#    lang_sel = st.selectbox("Language", ["pt", "en"], index=0 if lang == "pt" else 1)
+#    page_map = {
+#        "home": t["page_home"],
+#        "swagger": t["page_swagger"],
+#        "redoc": t["page_redoc"],
+#        "openapi": t["page_openapi"],
+#        "endpoints": t["page_endpoints"],
+#    }
+#    page_sel_label = st.radio("Navegação", list(page_map.values()), index=list(page_map.keys()).index(page) if page in page_map else 0)
 
     # Atualiza query params ao mudar
-    inv_page_map = {v: k for k, v in page_map.items()}
-    new_page = inv_page_map[page_sel_label]
-    if new_page != page or lang_sel != lang:
-        st.query_params.update({"page": new_page, "lang": lang_sel})
-        st.rerun()
+#    inv_page_map = {v: k for k, v in page_map.items()}
+#    new_page = inv_page_map[page_sel_label]
+#    if new_page != page or lang_sel != lang:
+#        st.query_params.update({"page": new_page, "lang": lang_sel})
+#        st.rerun()
 
-    st.divider()
+#    st.divider()
     #st.markdown("**Assets (opcional)**")
     #st.code("static/theme.css\nstatic/swagger.css\nstatic/lab-logo.png\nstatic/uni-logo.png")
 
